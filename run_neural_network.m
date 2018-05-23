@@ -1,4 +1,6 @@
-function[theta] = run_neural_network(X, y, layer_format, iter, lambda, K)
+function[theta] = run_neural_network(X, y, layer_format, iter, lambda)
+
+K = layer_format(end, 1);
 
 theta = create_theta(layer_format);
 
