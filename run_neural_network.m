@@ -8,4 +8,6 @@ options = optimset('MaxIter', iter);
 
 [theta, cost] = fmincg(costFunction, theta, options);
 
+theta = reshape_theta(theta, layer_format);
+
 end
